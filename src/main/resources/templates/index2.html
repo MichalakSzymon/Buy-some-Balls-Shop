@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="htmlhead">
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+
+    <title>Thymeleaf</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+</head>
+<body>
+<th:block th:include="/_header"></th:block>
+<th:block th:include="/_menu"></th:block>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span> <span
+                    class="icon-bar">sssss</span> <span class="icon-bar"></span> <span
+                    class="icon-bar">ssss</span>
+            </button>
+            <a class="navbar-brand" href="/">Home</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/search">Search</a></li>
+                <li><a href="/search/add">Add</a></li>
+                <li><a href="/search/list">List</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br/><br/><br/><br/>
+<div class="container" style="min-height: 500px">
+    <div class="jumbotron">
+        <div class="starter-template">
+            <img class="pull-right" style="width: 200px;height: 150px;" src="https://pbs.twimg.com/profile_images/2555599145/g3x4z73n864lohrfuugm.jpeg">
+            <br/><br/><br/>
+            <h2>Welcome in PRUFTECHNIK</h2>
+            <br/><br/><br/>  <br/><br/><br/>
+            <a href="/search"> <button type="button" class="btn btn-primary btn-lg btn-block">SEARCH</button></a>
+            <br/>
+            <a href="/search/add"><button type="button" class="btn btn-default btn-lg btn-block">ADD</button></a>
+            <br/>
+            <a href="/search/list"><button type="button" class="btn btn-primary btn-lg btn-block">LIST</button></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
